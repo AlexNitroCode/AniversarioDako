@@ -87,3 +87,20 @@ p {
         transform: translateY(0);
     }
 }
+
+
+/* Añadir al final de tu CSS */
+.fade-to-white {
+    animation: fadeToWhite 2s forwards;
+}
+
+@keyframes fadeToWhite {
+    0% {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    100% {
+        background-color: #ffffff;
+        color: #ffffff;
+    }
+}

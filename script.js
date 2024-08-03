@@ -16,3 +16,17 @@ function nextPage() {
         page2.classList.add('fade-in-up');
     }, 1000); // Duración de la animación de salida en milisegundos
 }
+
+function start() {
+    document.body.classList.add('fade-to-white');
+    const containers = document.querySelectorAll('.container, .styled-button, h1');
+    containers.forEach(container => container.classList.add('fade-to-white'));
+
+    // Redirigir a una nueva página después de que la animación termine (2s)
+    setTimeout(() => {
+        window.location.href = 'page/index.html'; // Cambia la URL por la de la nueva página
+    }, 4000); // Duración de la animación en milisegundos
+}
+
+// Asignar la función start al botón en la segunda página
+document.querySelector('#page2 .styled-button').onclick = start;
