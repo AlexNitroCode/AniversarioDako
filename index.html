@@ -6,6 +6,14 @@
     <title>Unity WebGL Player | GravitySim</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script>
+    if (!window.WebGLBuildLoader) {
+        window.WebGLBuildLoader = {
+            baseUrl: window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) + "/Build/"
+        };
+    }
+</script>
+
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
